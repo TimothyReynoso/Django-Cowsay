@@ -1,0 +1,15 @@
+<div>
+    <a href="/">Home</a>
+    <a href="history/">Most Recent</a>
+</div>
+<!-- Cowsay OutPut -->
+<pre>
+{{ cowsay.stdout.decode }}
+</pre>
+<!-- End -->
+<!-- Form -->
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>

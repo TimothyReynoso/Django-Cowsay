@@ -1,0 +1,14 @@
+<div>
+    <a href="/">Home</a>
+    <a href="history/">Most Recent</a>
+</div>
+<h1> Top 10 Most Recent ✅</h1>
+<ul>
+    {% for id in cowsayids %}
+        {% for word in cowsays %}
+            {% if word.id == id %}
+                <li>{{word}}</li> 
+            {% endif %}
+        {% endfor %}   
+    {% endfor %}
+</ul>
